@@ -1,0 +1,21 @@
+{
+  "name": "Flutter Codespace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.flutter",
+        "Dart-Code.dart-code"
+      ],
+      "settings": {
+        "dart.flutterSdkPath": "/usr/local/flutter",
+        "dart.sdkPath": "/usr/local/flutter/bin/cache/dart-sdk"
+      }
+    }
+  },
+  "forwardPorts": [3000, 8080, 5000],
+  "postCreateCommand": "flutter doctor -v",
+  "remoteUser": "vscode"
+}
